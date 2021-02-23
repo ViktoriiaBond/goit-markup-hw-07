@@ -121,24 +121,24 @@ body {
 /*-------------конец общие стили---------------*/
 
 /*-----------блок nav--------------------------*/
-.address-icons-mail {
+.auth-nav__icon-mail {
   width: 16px;
   height: 12px;
   margin-right: 10px;
   fill: #757575;
 }
-.address-icons-phone {
+.auth-nav__icon-phone {
   width: 10px;
   height: 16px;
   margin-right: 10px;
   fill: #757575;
 }
 
-.auth-nav .link-header:hover .address-icon,
-.auth-nav .link-header:focus .address-icon {
+.auth-nav__link-header:hover .auth-nav__address-icon,
+.auth-nav__link-header:focus .auth-nav__address-icon {
   fill: var(--accent-color);
 }
-.site-nav .link {
+.site-nav .site-nav__link {
   
   color: var(--tittle-color);
   font-weight: 500;
@@ -161,13 +161,13 @@ body {
 
   align-items: center;
 }
-.site-nav .site-nav-links {
+.site-nav .site-nav__links {
   margin-left: 43px;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus,
-.site-nav .link:active {
+.site-nav .site-nav__link:hover,
+.site-nav .site-nav__link:focus,
+.site-nav .site-nav__link:active {
   color: var(--accent-color);
   
 }
@@ -184,12 +184,12 @@ body {
   border-radius: 2px;
   
 }
-.site-nav .link.current{
+.site-nav .site-nav__link.current{
   
   color: var(--accent-color);
 }
 
-.link-header {
+.auth-nav__link-header {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -203,7 +203,7 @@ body {
 .address {
   margin-right: 70px;
 }
-.auth-nav-footer .link {
+.nav-footer__link {
   color: var(--contacts-color);
   font-style: normal;
   font-size: 14px;
@@ -212,11 +212,11 @@ body {
   letter-spacing: 0.03em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.adress-list:not(:last-child) {
+.nav-footer__adress-list:not(:last-child) {
   margin-bottom: 9px;
 }
 /*-----------блок contacts header------------------*/
-.auth-nav .link-header {
+.auth-nav__link-header {
   color: var(--main-color);
   font-weight: 500;
   font-size: 14px;
@@ -225,25 +225,25 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.auth-nav .auth-nav-links:not(:first-child) {
+.auth-nav__links:not(:first-child) {
   margin-left: 50px;
 }
 
 /*-----------блок contacts all-------------------*/
 
-.auth-nav-footer .link:hover,
-.auth-nav-footer .link:focus,
-.auth-nav .link-header:hover,
-.auth-nav .link-header:focus,
-.map:hover,
-.map:focus {
+.nav-footer__link:hover,
+.nav-footer__link:focus,
+.auth-nav__link-header:hover,
+.auth-nav__link-header:focus,
+.nav-footer__map:hover,
+.nav-footer__map:focus {
   color: var(--accent-color);
 }
 
 /*-------конец блок contacts----------------------*/
 
 /*--------блок footer-----------------------------*/
-.map {
+.nav-footer__map {
   color: var(--hero-color);
   font-weight: 400;
   font-size: 14px;
@@ -614,7 +614,7 @@ body {
 }
 /*----------стили для галерея---------------------*/
 
-.galery .desc {
+.galery-text__desc {
   margin: 0px;
 
   color: var(--main-color);
@@ -626,8 +626,8 @@ body {
 .galery-text {
   padding: 20px 24px;
 }
-.galery-nav .galery-button:hover,
-.galery-nav .galery-button:focus {
+.galery-nav__button:hover,
+.galery-nav__button:focus {
   background-color: var(--accent-color);
   color: var(--hero-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
@@ -636,7 +636,7 @@ body {
 
 }
 
-.galery-button {
+.galery-nav__button {
   padding: 6px 22px;
   border-radius: 4px;
   border-color: transparent;
@@ -650,7 +650,7 @@ body {
 
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.galery-header {
+.galery-text__header {
   margin-top: 0px;
   margin-bottom: 4px;
   color: var(--tittle-color);
@@ -675,20 +675,20 @@ body {
 .galery {
   flex-wrap: wrap;
 }
-.galery-nav .galery-list:not(:last-child) {
+.galery-nav__list:not(:last-child) {
   margin-right: 8px;
 }
 /*--------------------галерея-----------------*/
-.galery-img {
+.galery__img {
   height: 404px;
 
   border: 1px solid #eeeeee;
 }
-.galery-link-img{
+.galery-box__img{
   position: relative;
   overflow: hidden;
 }
-.galery-hover-text{
+.galery-box__hover-text{
   position: absolute;
   overflow: scroll;
   top: 0%;
@@ -710,24 +710,24 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.galery-link:hover .galery-hover-text,
-.galery-link:focus .galery-hover-text{
+.galery__link:hover .galery-box__hover-text,
+.galery__link:focus .galery-box__hover-text{
   
   transform: translateY(0%);
 }
 
-.galery .galery-img:not(:nth-child(3n)) {
+.galery__img:not(:nth-child(3n)) {
   margin-right: 30px;
 }
-.galery .galery-img:not(:nth-last-child(-n + 3)) {
+.galery__img:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
 
-.galery-link-box{
+.galery-box{
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.galery-link:hover .galery-link-box,
-.galery-link:focus .galery-link-box{
+.galery__link:hover .galery-box,
+.galery__link:focus .galery-box{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
